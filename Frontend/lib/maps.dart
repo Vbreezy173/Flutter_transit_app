@@ -99,47 +99,54 @@ class MapSampleState extends ConsumerState<MapSample> {
 
 // Method to get user location and move camera
   Future<void> _goToCurrentLocation(WidgetRef ref) async {
+    // Check if location services are enabled
+    bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      // Location services are not enabled, handle it here
+      logger.w('Location services are disabled');
+      return;
+    }
+
     // Check if location permission is granted
-    final status = await Permission.locationWhenInUse.status;
+    PermissionStatus status = await Permission.locationWhenInUse.status;
     if (status.isDenied) {
       // Request location permission
-      final result = await Permission.locationWhenInUse.request();
-      if (result.isDenied) {
+      status = await Permission.locationWhenInUse.request();
+      if (status.isDenied) {
         // User denied location permission, handle it here
         logger.w('Location permission denied by user');
         return;
       }
     }
 
+    if (status.isPermanentlyDenied) {
+      // The user opted not to grant permission and should be directed to the settings
+      openAppSettings();
+      return;
+    }
+
     try {
       final GoogleMapController controller = await _controller.future;
-      // Get the current postion of user
       Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high);
+
       print("Get location");
       print("Ref: ${ref.watch(positionProvider.notifier).state}");
 
-      /* Trigger panel rebuild based on users postion  */
+      /* Trigger panel rebuild based on users position  */
       ref.watch(positionProvider.notifier).state =
           LatLng(position.latitude, position.longitude);
-      //Move camera towards positon
+
+      // Move camera towards position
       controller.animateCamera(CameraUpdate.newCameraPosition(
         CameraPosition(
           target: LatLng(position.latitude, position.longitude),
           zoom: 15.0,
         ),
       ));
-      setState(() {
-        //Set marker on users postion
-        markers.add(Marker(
-          markerId: MarkerId(markers.length.toString()),
-          infoWindow: const InfoWindow(title: "You are here"),
-          position: LatLng(position.latitude, position.longitude),
-        ));
-      });
     } catch (e) {
-      // Handle the exception here
-      logger.e("Error occurred during moving to current location", e);
+      // Handle exceptions (e.g., timeout, lack of GPS)
+      logger.e('Error getting location: $e');
     }
   } //go to current location
 

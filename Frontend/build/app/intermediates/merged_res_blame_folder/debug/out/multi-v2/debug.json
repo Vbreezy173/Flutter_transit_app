@@ -3943,6 +3943,25 @@
             "outputFile": "com.example.flutter_transit_app-merged_res-16:/values_values.arsc.flat",
             "map": [
                 {
+                    "source": "/Users/veraldval/.gradle/caches/transforms-3/76dcb37f22f3bbe9deadc7f5863691a5/transformed/jetified-play-services-maps-18.2.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "167",
+                        "endLines": "66",
+                        "endColumns": "20",
+                        "endOffsets": "1669"
+                    },
+                    "to": {
+                        "startLines": "273",
+                        "startColumns": "4",
+                        "startOffsets": "14280",
+                        "endLines": "335",
+                        "endColumns": "20",
+                        "endOffsets": "15782"
+                    }
+                },
+                {
                     "source": "/Users/veraldval/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,89,90,94,95,96,97,103,113,146,167,200",
@@ -3978,25 +3997,6 @@
                         "endLines": "7,8,9,10,80,146,150,362,374,382",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "339,399,451,496,5108,10064,10195,16481,16921,17230"
-                    }
-                },
-                {
-                    "source": "/Users/veraldval/Desktop/GitHub/Flutter_transit_app/Frontend/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "121,125",
-                        "startColumns": "4,4",
-                        "startOffsets": "8627,8808",
-                        "endLines": "124,127",
-                        "endColumns": "12,12",
-                        "endOffsets": "8803,8972"
                     }
                 },
                 {
@@ -4036,25 +4036,6 @@
                     }
                 },
                 {
-                    "source": "/Users/veraldval/.gradle/caches/transforms-3/a0e34175b89fa528462076cc4208822f/transformed/jetified-play-services-maps-18.1.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "167",
-                        "endLines": "66",
-                        "endColumns": "20",
-                        "endOffsets": "1669"
-                    },
-                    "to": {
-                        "startLines": "273",
-                        "startColumns": "4",
-                        "startOffsets": "14280",
-                        "endLines": "335",
-                        "endColumns": "20",
-                        "endOffsets": "15782"
-                    }
-                },
-                {
                     "source": "/Users/veraldval/.gradle/caches/transforms-3/f46b9773282b7a3d38863a46e0e0b5d1/transformed/jetified-play-services-basement-18.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -4070,6 +4051,25 @@
                         "endColumns": "67,166",
                         "endOffsets": "6148,7425"
                     }
+                },
+                {
+                    "source": "/Users/veraldval/Desktop/GitHub/Flutter_transit_app/src/Frontend/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "121,125",
+                        "startColumns": "4,4",
+                        "startOffsets": "8627,8808",
+                        "endLines": "124,127",
+                        "endColumns": "12,12",
+                        "endOffsets": "8803,8972"
+                    }
                 }
             ]
         },
@@ -4077,7 +4077,7 @@
             "outputFile": "com.example.flutter_transit_app-merged_res-16:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/veraldval/Desktop/GitHub/Flutter_transit_app/Frontend/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/veraldval/Desktop/GitHub/Flutter_transit_app/src/Frontend/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

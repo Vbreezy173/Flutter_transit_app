@@ -13,7 +13,7 @@ import '../entites/StationData.dart';
 //This class is used for fetching and serving data to app
 
 class DataFetcher {
-  //URL to connet to API
+  //Add your URL to connet to API
   static const baseURL = "http://192.168.1.250:5000";
   //Endpoints
   static const singleTimeEndpoint = "$baseURL/api/single_times";

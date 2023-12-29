@@ -4,7 +4,7 @@
             "outputFile": "com.example.flutter_transit_app-mergeDebugResources-14:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/veraldval/Desktop/GitHub/Flutter_transit_app/Frontend/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/veraldval/Desktop/GitHub/Flutter_transit_app/src/Frontend/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

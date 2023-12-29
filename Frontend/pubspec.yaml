@@ -78,8 +78,6 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets: 
       - assets/map_style.txt
-      - assets/Stations.json
-      - assets/train.png
       - assets/TrainIcons/
       - assets/TrainIcons/A.png
       - assets/TrainIcons/B.png
